@@ -14,7 +14,7 @@ using AutoTest.basic;
 namespace AutoTest.tests
 {
     [TestFixture(typeof(FirefoxDriver))]
-    //[TestFixture(typeof(ChromeDriver))]
+    [TestFixture(typeof(ChromeDriver))]
     class Case1<TWebDriver> : TestFrame<TWebDriver> where TWebDriver : IWebDriver, new()
     {
         WelcomePage welcomePage = null;
